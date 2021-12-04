@@ -1,0 +1,117 @@
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@import 'footer.css';
+@import 'carousel.css';
+@import 'products.css';
+@import 'contact.css';
+@import 'about.css';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+  background: #F2F2F2;
+}
+
+/* MENU */
+nav{
+    background-color: #fbd475;
+}
+#produtos, #contact, #about {
+    padding-top: 110px;
+}
+
+#produtos a:hover{
+    text-decoration: none;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px dotted #fbd475;
+}
+
+.separator:not(:empty)::after {
+    margin-left: 0;
+}
+
+.separator h2{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #fbd475;
+    border: 2px solid #fbd475;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+.nav-item {
+    padding: 30px;
+}
+
+.nav-item a, .navegat-site a {
+    color: #f38321;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav-item a{
+    font-size: 20px;
+}
+
+.nav-item a:hover, .navegat-site a:hover {
+    color: #ffffff;
+    border-bottom: 4px solid #f38345;
+}
+
+#navbarContent {
+    justify-content: flex-end;
+}
+
+.slideanim {visibility:hidden;}
+  .slide-div {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 990px) {
+    .nav-item {
+        padding: 10px;
+    }
+}

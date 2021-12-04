@@ -1,0 +1,38 @@
+.lista-contato{
+
+    list-style-type: none;
+}
+
+.lista-contato > li{
+
+    margin: 25px 0 25px 0;
+}
+
+.div-social-ul {
+    background: #f58634;
+    padding: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: #FFF;
+}
+
+/* SOCIALS MEDIAS */
+
+.lista-contato a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.lista-contato > li .soc-3{
+    width: 100%;
+}
+
+.lista-contato > li .soc-2{
+    width: 80%;
+    margin-left: 20%;
+}
+
+.lista-contato > li .soc-1{
+    width: 60%;
+    margin-left: 40%;
+}

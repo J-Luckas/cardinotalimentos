@@ -1,0 +1,41 @@
+.about-img{
+    background: #fbd475;
+    padding: 40px;
+    border-radius: 35px;
+}
+
+.texto-sobre {
+    text-align: center;    
+    color: #2e693e;
+    margin-top: 38px;
+}
+.texto-sub-paragrafo {
+    font-size: 22px;
+    color: #f58634;
+}
+
+.slogan-sobre {
+    background: #f58634;
+    padding: 30px;
+}
+
+.slogan-sobre h2{
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtexto-sobre {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.span-text-1 {
+    color: #F27B35;
+    
+}
+
+.span-text {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

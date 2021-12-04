@@ -1,0 +1,33 @@
+footer *, footer {
+    color: white;
+    /* height: 50px; */
+    background-color: #fbd475;    
+    justify-content: center;
+}
+footer{
+    height: 85px;
+    position: absolute;
+    right: 0;    
+    margin-bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.navegat-site {
+    display: flex;
+}
+
+.navegat-site h4 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.termos{
+    background: none;
+}
+.redes-sociais{
+    background: none;
+}
