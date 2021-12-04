@@ -31,26 +31,6 @@ $(function(){
                 $(this).addClass("slide-div");
             }
         });
-
-        var winTop = $(window).scrollTop();
-
-        if( winTop < 105 ){
-            $pcnt = 1;
-        }else if( winTop >= 105 && winTop < 210){
-            $pcnt = 0.75;
-
-
-        }else if( winTop >= 210 && winTop < 315 ){
-            $pcnt = 0.5;
-
-        }else if( winTop >= 315 && winTop < 380){
-            $pcnt = 0.25;
-        }else{
-            $pcnt = 0;
-        }
-        $(".img-inicio img").css("opacity", $pcnt);
-        $(".navbar-brand img").css("opacity", 1 - $pcnt);
-
     });
 
     $('body').on("click","#enviar-email",function(){
