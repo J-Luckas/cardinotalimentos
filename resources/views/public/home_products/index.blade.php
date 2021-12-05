@@ -1,4 +1,4 @@
-@include('public._sections.header')
+@include('public._sections.header-product')
 
 <main class="main-prod" style="height: 100vh;">
 

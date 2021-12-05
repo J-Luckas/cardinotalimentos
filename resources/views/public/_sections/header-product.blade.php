@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
 
         <!-- SEO -->
-        <title> Cardinot Alimentos </title>
+        <title> Cardinot Alimentos - {{ $product->nome }} </title>
         <link rel="icon" href="{{asset('img/logo-icone.ico')}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Cardinot Alimentos">
-        <meta name="description" content="Aquele lanchinho da tarde, acompanhado pelos deliciosos Pãezinhos de Queijo artesanal."/>
+        <meta name="description" content=" {{ $product->descricao }}"/>
         <meta name="keywords" content="Pão, queijo, pão de queijo, pao de queijo, cardinot, paes de queijo, Cardinot Alimentos, alimentos">
         <link rel="canonical" href="https://www.cardinotalimentos.com">
         <meta name="author" content="Jairo Luckas">
@@ -18,21 +18,21 @@
         <meta http-equiv=”content-type” content=”text/html; charset=UTF-8″>
 
         <!-- Open Graph Facebook -->
-        <meta property="og:title" content="Cardinot Alimentos">
-        <meta property="og:description" content="Aquele lanchinho da tarde, acompanhado pelos deliciosos Pãezinhos de Queijo artesanal."/>
+        <meta property="og:title" content="Cardinot Alimentos - {{ $product->nome }}">
+        <meta property="og:description" content="{{ $product->descricao }}"/>
         <meta property="og:url" content="https://www.cardinotalimentos.com">
         <meta property="og:site_name" content="Cardinot Alimentos"/>
         <meta property="og:type" content="website">
-        <meta property="og:image" itemprop="image" content="https://www.cardinotalimentos.com/assets/img/logo.png">
-        <meta property="og:image:type" content="image/png">
+        <meta property="og:image" itemprop="image" content="{{ $fotos->first() }}">
+        <meta property="og:image:type" content="image/webp">
 
         <!-- Twitter -->
-        <meta name="twitter:title" content="Cardinot Alimentos">
-        <meta name="twitter:description" content="Aquele lanchinho da tarde, acompanhado pelos deliciosos Pãezinhos de Queijo artesanal.">
+        <meta name="twitter:title" content="Cardinot Alimentos - {{ $product->nome }}">
+        <meta name="twitter:description" content="{{ $product->descricao }}">
         <meta name="twitter:url" content="https://www.cardinotalimentos.com">
         <meta name="twitter:card" content="Temos planos e preços especiais para sua empresa. Entre em contato conosco, será uma honra conhecê-los! CARDINOT ALIMENTOS - A SUA CASA DO PÃO DE QUEIJO!">
-        <meta name="twitter:image" content="https://www.cardinotalimentos.com/assets/img/logo.png">
-        <meta property="twitter:image:type" content="image/png">
+        <meta name="twitter:image" content="{{ $fotos->first() }}">
+        <meta property="twitter:image:type" content="image/webp">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
