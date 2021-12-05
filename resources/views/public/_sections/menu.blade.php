@@ -12,9 +12,9 @@
         <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="{{ route('site.index')}}" class="">Início</a></li>
-                <li class="nav-item"><a href="#produtos" class="">Produtos</a></li>
-                <li class="nav-item"><a href="#about" class="">Quem somos</a></li>
-                <li class="nav-item"><a href="#contact" class="">Contato</a></li>
+                <li class="nav-item"><a href="{{ route('site.index')}}/#produtos" class="">Produtos</a></li>
+                <li class="nav-item"><a href="{{ route('site.index')}}/#about" class="">Quem somos</a></li>
+                <li class="nav-item"><a href="{{ route('site.index')}}/#contact" class="">Contato</a></li>
 
             </ul>
 
