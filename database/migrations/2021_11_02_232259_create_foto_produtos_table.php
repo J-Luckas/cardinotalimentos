@@ -25,199 +25,199 @@ class CreateFotoProdutosTable extends Migration
         DB::table('foto_produtos')->insert(
             [
                 array(
-                    'url' => 'img/produtos/pao-tradicional/pao-tradicional1.JPG',
+                    'url' => 'img/produtos/pao-tradicional/pao-tradicional1.webp',
                     'produto_id' => 1
                 ),
                 array(
-                    'url' => 'img/produtos/pao-tradicional/pao-tradicional2.JPG',
+                    'url' => 'img/produtos/pao-tradicional/pao-tradicional2.webp',
                     'produto_id' => 1
                 ),
                 array(
-                    'url' => 'img/produtos/pao-tradicional/pao-tradicional3.JPG',
+                    'url' => 'img/produtos/pao-tradicional/pao-tradicional3.webp',
                     'produto_id' => 1
                 ),
                 array(
-                    'url' => 'img/produtos/pao-tradicional/pao-tradicional4.JPG',
+                    'url' => 'img/produtos/pao-tradicional/pao-tradicional4.webp',
                     'produto_id' => 1
                 ),
                 array(
-                    'url' => 'img/produtos/pao-alho/pao-alho1.JPG',
+                    'url' => 'img/produtos/pao-alho/pao-alho1.webp',
                     'produto_id' => 2
                 ),
                 array(
-                    'url' => 'img/produtos/pao-alho/pao-alho2.JPG',
+                    'url' => 'img/produtos/pao-alho/pao-alho2.webp',
                     'produto_id' => 2
                 ),
                 array(
-                    'url' => 'img/produtos/pao-alho/pao-alho3.JPG',
+                    'url' => 'img/produtos/pao-alho/pao-alho3.webp',
                     'produto_id' => 2
                 ),
                 array(
-                    'url' => 'img/produtos/pao-alho/pao-alho4.JPG',
+                    'url' => 'img/produtos/pao-alho/pao-alho4.webp',
                     'produto_id' => 2
                 ),
                 array(
-                    'url' => 'img/produtos/pao-doce-leite/doce-leite1.JPG',
+                    'url' => 'img/produtos/pao-doce-leite/doce-leite1.webp',
                     'produto_id' => 3
                 ),
                 array(
-                    'url' => 'img/produtos/pao-doce-leite/doce-leite2.JPG',
+                    'url' => 'img/produtos/pao-doce-leite/doce-leite2.webp',
                     'produto_id' => 3
                 ),
                 array(
-                    'url' => 'img/produtos/pao-doce-leite/doce-leite3.JPG',
+                    'url' => 'img/produtos/pao-doce-leite/doce-leite3.webp',
                     'produto_id' => 3
                 ),
                 array(
-                    'url' => 'img/produtos/pao-doce-leite/doce-leite4.JPG',
+                    'url' => 'img/produtos/pao-doce-leite/doce-leite4.webp',
                     'produto_id' => 3
                 ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry1.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry1.webp',
                     'produto_id' => 4
                 ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry2.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry2.webp',
                     'produto_id' => 4
                 ),
                 // array(
-                //     'url' => 'img/produtos/pao-catupiry/catupiry3.JPG',
+                //     'url' => 'img/produtos/pao-catupiry/catupiry3.webp',
                 //     'produto_id' => 4
                 // ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry4.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry4.webp',
                     'produto_id' => 4
                 ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry5.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry5.webp',
                     'produto_id' => 4
                 ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry6.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry6.webp',
                     'produto_id' => 4
                 ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry7.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry7.webp',
                     'produto_id' => 4
                 ),
                 // array(
-                //     'url' => 'img/produtos/pao-catupiry/catupiry8.JPG',
+                //     'url' => 'img/produtos/pao-catupiry/catupiry8.webp',
                 //     'produto_id' => 4
                 // ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry9.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry9.webp',
                     'produto_id' => 4
                 ),
                 // array(
-                //     'url' => 'img/produtos/pao-catupiry/catupiry10.JPG',
+                //     'url' => 'img/produtos/pao-catupiry/catupiry10.webp',
                 //     'produto_id' => 4
                 // ),
                 array(
-                    'url' => 'img/produtos/pao-catupiry/catupiry11.JPG',
+                    'url' => 'img/produtos/pao-catupiry/catupiry11.webp',
                     'produto_id' => 4
                 ),
                 array(
-                    'url' => 'img/produtos/pao-nutella/nutella1.JPG',
+                    'url' => 'img/produtos/pao-nutella/nutella1.webp',
                     'produto_id' => 5
                 ),
                 array(
-                    'url' => 'img/produtos/pao-nutella/nutella2.JPG',
+                    'url' => 'img/produtos/pao-nutella/nutella2.webp',
                     'produto_id' => 5
                 ),
                 array(
-                    'url' => 'img/produtos/pao-nutella/nutella3.JPG',
+                    'url' => 'img/produtos/pao-nutella/nutella3.webp',
                     'produto_id' => 5
                 ),
                 array(
-                    'url' => 'img/produtos/pao-nutella/nutella4.JPG',
+                    'url' => 'img/produtos/pao-nutella/nutella4.webp',
                     'produto_id' => 5
                 ),
                 array(
-                    'url' => 'img/produtos/pao-nutella/nutella5.JPG',
+                    'url' => 'img/produtos/pao-nutella/nutella5.webp',
                     'produto_id' => 5
                 ),
                 array(
-                    'url' => 'img/produtos/pao-nutella/nutella6.JPG',
+                    'url' => 'img/produtos/pao-nutella/nutella6.webp',
                     'produto_id' => 5
                 ),
                 array(
-                    'url' => 'img/produtos/pao-goiabada/goiabada1.JPG',
+                    'url' => 'img/produtos/pao-goiabada/goiabada1.webp',
                     'produto_id' => 6
                 ),
                 array(
-                    'url' => 'img/produtos/pao-goiabada/goiabada2.JPG',
+                    'url' => 'img/produtos/pao-goiabada/goiabada2.webp',
                     'produto_id' => 6
                 ),
                 array(
-                    'url' => 'img/produtos/pao-goiabada/goiabada3.JPG',
+                    'url' => 'img/produtos/pao-goiabada/goiabada3.webp',
                     'produto_id' => 6
                 ),
                 array(
-                    'url' => 'img/produtos/pao-goiabada/goiabada4.JPG',
+                    'url' => 'img/produtos/pao-goiabada/goiabada4.webp',
                     'produto_id' => 6
                 ),
                 array(
-                    'url' => 'img/produtos/pao-goiabada/goiabada5.JPG',
+                    'url' => 'img/produtos/pao-goiabada/goiabada5.webp',
                     'produto_id' => 6
                 ),
                 array(
-                    'url' => 'img/produtos/pao-goiabada/goiabada6.JPG',
+                    'url' => 'img/produtos/pao-goiabada/goiabada6.webp',
                     'produto_id' => 6
                 ),
                 array(
-                    'url' => 'img/produtos/pao-cheddar/pao-cheddar1.JPG',
+                    'url' => 'img/produtos/pao-cheddar/pao-cheddar1.webp',
                     'produto_id' => 7
                 ),
                 array(
-                    'url' => 'img/produtos/pao-cheddar/pao-cheddar2.JPG',
+                    'url' => 'img/produtos/pao-cheddar/pao-cheddar2.webp',
                     'produto_id' => 7
                 ),
                 array(
-                    'url' => 'img/produtos/pao-cheddar/pao-cheddar3.JPG',
+                    'url' => 'img/produtos/pao-cheddar/pao-cheddar3.webp',
                     'produto_id' => 7
                 ),
                 array(
-                    'url' => 'img/produtos/pao-cheddar/pao-cheddar4.JPG',
+                    'url' => 'img/produtos/pao-cheddar/pao-cheddar4.webp',
                     'produto_id' => 7
                 ),
                 array(
-                    'url' => 'img/produtos/pao-cheddar/pao-cheddar5.JPG',
+                    'url' => 'img/produtos/pao-cheddar/pao-cheddar5.webp',
                     'produto_id' => 7
                 ),
                 array(
-                    'url' => 'img/produtos/pao-cheddar/pao-cheddar6.JPG',
+                    'url' => 'img/produtos/pao-cheddar/pao-cheddar6.webp',
                     'produto_id' => 7
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon1.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon1.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon2.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon2.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon3.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon3.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon4.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon4.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon5.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon5.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon6.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon6.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon7.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon7.webp',
                     'produto_id' => 8
                 ),
                 array(
-                    'url' => 'img/produtos/pao-bacon/pao-bacon8.JPG',
+                    'url' => 'img/produtos/pao-bacon/pao-bacon8.webp',
                     'produto_id' => 8
                 )
             ]
