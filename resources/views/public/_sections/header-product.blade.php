@@ -8,7 +8,9 @@
         <title> Cardinot Alimentos - {{ $product->nome }} </title>
         <link rel="icon" href="{{asset('img/logo-icone.ico')}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Cardinot Alimentos">
+        <meta property="og:title" content="Cardinot Alimentos - {{ $product->nome }}">
+        <meta property="og:image" itemprop="image" content="{{ asset($fotos->first()->url) }}">
+        <meta property="og:image:type" content="image/webp">
         <meta name="description" content=" {{ $product->descricao }}"/>
         <meta name="keywords" content="Pão, queijo, pão de queijo, pao de queijo, cardinot, paes de queijo, Cardinot Alimentos, alimentos">
         <link rel="canonical" href="https://www.cardinotalimentos.com">
