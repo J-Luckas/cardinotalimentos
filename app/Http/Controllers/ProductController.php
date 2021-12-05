@@ -12,7 +12,8 @@ class ProductController extends Controller
         $product = new Produto();
         $product = $product->where('slug', $slug_produto)->first();
 
-        $fotos = $product->fotos;
-        return view('public.home_products.index', compact('product', 'fotos'));
+        $fotos = $product->fotos()->where('seo_og_image', false)->get();
+        $fotoSeo = $product->fotos()->where('seo_og_image', true)->first();
+        return view('public.home_products.index', compact('product', 'fotos', 'fotoSeo'));
     }
 }

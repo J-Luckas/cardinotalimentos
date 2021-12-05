@@ -9,7 +9,7 @@
         <link rel="icon" href="{{asset('img/logo-icone.ico')}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Cardinot Alimentos - {{ $product->nome }}">
-        <meta property="og:image" itemprop="image" content="{{ asset($fotos->where('seo_og_image', true)->first()->url) }}">
+        <meta property="og:image" itemprop="image" content="{{ asset($fotoSeo->url) }}">
         <meta property="og:image:type" content="image/png">
         <meta name="description" content=" {{ $product->descricao }}"/>
         <meta name="keywords" content="Pão, queijo, pão de queijo, pao de queijo, cardinot, paes de queijo, Cardinot Alimentos, alimentos">
@@ -25,7 +25,7 @@
         <meta property="og:url" content="https://www.cardinotalimentos.com">
         <meta property="og:site_name" content="Cardinot Alimentos"/>
         <meta property="og:type" content="website">
-        <meta property="og:image" itemprop="image" content="{{ asset($fotos->where('seo_og_image', true)->first()->url) }}">
+        <meta property="og:image" itemprop="image" content="{{ asset($fotoSeo->url) }}">
         <meta property="og:image:type" content="image/png">
 
         <!-- Twitter -->
@@ -33,7 +33,7 @@
         <meta name="twitter:description" content="{{ $product->descricao }}">
         <meta name="twitter:url" content="https://www.cardinotalimentos.com">
         <meta name="twitter:card" content="Temos planos e preços especiais para sua empresa. Entre em contato conosco, será uma honra conhecê-los! CARDINOT ALIMENTOS - A SUA CASA DO PÃO DE QUEIJO!">
-        <meta name="twitter:image" content="{{ asset($fotos->where('seo_og_image', true)->first()->url) }}">
+        <meta name="twitter:image" content="{{ asset($fotoSeo->url) }}">
         <meta property="twitter:image:type" content="image/png">
 
         <!-- Bootstrap CSS -->
