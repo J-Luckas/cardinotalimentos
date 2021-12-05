@@ -1,6 +1,6 @@
 @include('public._sections.header-product')
 
-<main class="main-prod" style="height: 100vh;">
+<main class="main-prod" style="height: 1000px;">
 
     <div class="container h-100">
         <div class="row h-100">
