@@ -23,7 +23,7 @@
         <meta property="og:url" content="https://www.cardinotalimentos.com">
         <meta property="og:site_name" content="Cardinot Alimentos"/>
         <meta property="og:type" content="website">
-        <meta property="og:image" itemprop="image" content="{{ $fotos->first() }}">
+        <meta property="og:image" itemprop="image" content="{{ asset($fotos->first()->url) }}">
         <meta property="og:image:type" content="image/webp">
 
         <!-- Twitter -->
@@ -31,7 +31,7 @@
         <meta name="twitter:description" content="{{ $product->descricao }}">
         <meta name="twitter:url" content="https://www.cardinotalimentos.com">
         <meta name="twitter:card" content="Temos planos e preços especiais para sua empresa. Entre em contato conosco, será uma honra conhecê-los! CARDINOT ALIMENTOS - A SUA CASA DO PÃO DE QUEIJO!">
-        <meta name="twitter:image" content="{{ $fotos->first() }}">
+        <meta name="twitter:image" content="{{ asset($fotos->first()->url) }}">
         <meta property="twitter:image:type" content="image/webp">
 
         <!-- Bootstrap CSS -->
