@@ -3,7 +3,7 @@
     <head>
 
         <meta charset="UTF-8">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
         <!-- SEO -->
         <title> Cardinot Alimentos - {{ $product->nome }} </title>
         <link rel="icon" href="{{asset('img/logo-icone.ico')}}">

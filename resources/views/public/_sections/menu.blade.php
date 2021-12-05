@@ -11,7 +11,7 @@
 
         <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#inicio-div" class="">Início</a></li>
+                <li class="nav-item"><a href="{{ asset('img/logo.png') }}" class="">Início</a></li>
                 <li class="nav-item"><a href="#produtos" class="">Produtos</a></li>
                 <li class="nav-item"><a href="#about" class="">Quem somos</a></li>
                 <li class="nav-item"><a href="#contact" class="">Contato</a></li>

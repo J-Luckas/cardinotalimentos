@@ -38,31 +38,32 @@ $(function(){
         var email = $("#email").val();
         var mensagem= $("#mensagem").val();
         var telefone = $("#telefone").val();
-
+        var csrf     = $('meta[name="csrf-token"]').attr("content");
 
         if( nome != "" && email != "" && mensagem != "" && telefone != ""){
             $.ajax({
-                url: "src/Controller/EnviarEmail.php",
+                url: "/enviar-email",
                 method: "POST",
                 data:{
-                    nome: nome,
+                    name: nome,
                     email: email,
                     telefone: telefone,
-                    mensagem: mensagem
+                    message: mensagem,
+                    _token: csrf
                 }
             })
             .done(function(msg){
-                // console.log(msg);
-                if(msg != "1"){
-                    $(".msg-ret-contact").empty();
-                    $(".msg-ret-contact").append('<div class="alert alert-danger" style="font-weight: bolder;" role="alert">Ocorreu um erro ao processar!!</div>');
-                }else{
-                    $(".msg-ret-contact").empty();
-                    $(".msg-ret-contact").append('<div class="alert alert-success" style="font-weight: bolder;" role="alert">Sua mensagem foi enviada com sucesso!</div>');
-                }
+                console.log(msg);
+                // if(msg != "1"){
+                //     $(".msg-ret-contact").empty();
+                //     $(".msg-ret-contact").append('<div class="alert alert-danger" style="font-weight: bolder;" role="alert">Ocorreu um erro ao processar!!</div>');
+                // }else{
+                //     $(".msg-ret-contact").empty();
+                //     $(".msg-ret-contact").append('<div class="alert alert-success" style="font-weight: bolder;" role="alert">Sua mensagem foi enviada com sucesso!</div>');
+                // }
             })
             .fail(function(msg){
-
+                alert("Ocorreu um erro ao processar!!!");
             });
         }else{
             $(".msg-ret-contact").empty();
