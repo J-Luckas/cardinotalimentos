@@ -35,12 +35,12 @@ $(function(){
         });
     });
 
-    $('body').on("click","#enviar-email",function(){
-        var nome = $("#nome").val();
-        var email = $("#email").val();
-        var mensagem= $("#mensagem").val();
-        var telefone = $("#telefone").val();
-        var csrf     = $('meta[name="csrf-token"]').attr("content");
+    $('body').on("click","#enviar-email",function(e){
+        const nome = $("#nome").val();
+        const email = $("#email").val();
+        const mensagem= $("#mensagem").val();
+        const telefone = $("#telefone").val();
+        const csrf     = $('meta[name="csrf-token"]').attr("content");
 
         if( nome != "" && email != "" && mensagem != "" && telefone != ""){
             $.ajax({
@@ -52,20 +52,29 @@ $(function(){
                     telefone: telefone,
                     message: mensagem,
                     _token: csrf
-                }
+                },
+                beforeSend : function(){
+                    $(e.target).attr("disabled", true);
+                    $('#load-email').show();
+                    $('#send-email-button').hide();
+                },
             })
             .done(function(msg){
-                console.log(msg);
-                // if(msg != "1"){
-                //     $(".msg-ret-contact").empty();
-                //     $(".msg-ret-contact").append('<div class="alert alert-danger" style="font-weight: bolder;" role="alert">Ocorreu um erro ao processar!!</div>');
-                // }else{
-                //     $(".msg-ret-contact").empty();
-                //     $(".msg-ret-contact").append('<div class="alert alert-success" style="font-weight: bolder;" role="alert">Sua mensagem foi enviada com sucesso!</div>');
-                // }
+                $(".msg-ret-contact").empty();
+                $(".msg-ret-contact").append('<div class="alert alert-success" style="font-weight: bolder;" role="alert">Sua mensagem foi enviada com sucesso!</div>');
+
+                $(e.target).attr("disabled", false);
+                $('#load-email').hide();
+                $('#send-email-button').show();
+
+
+                $("#nome").val("");
+                $("#email").val("");
+                $("#mensagem").val("");
+                $("#telefone").val("");
             })
-            .fail(function(msg){
-                alert("Ocorreu um erro ao processar!!!");
+            .fail(function(err){
+                alert(err);
             });
         }else{
             $(".msg-ret-contact").empty();
