@@ -30,7 +30,7 @@ class SendEmailController extends Controller
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;                                      // Enable verbose debug output
             $mail->CharSet = 'UTF-8';
             $mail->isSMTP();                                            // Set mailer to use SMTP
-            $mail->Host = "mail.cardinotalimentos.com";
+            $mail->Host = "br712.hostgator.com.br";
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username = "contato@cardinotalimentos.com";
             $mail->Password = "21010321Familia.";
