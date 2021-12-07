@@ -8,11 +8,11 @@
         <title> Cardinot Alimentos - {{ $product->nome }} </title>
         <link rel="icon" href="{{asset('img/logo-icone.ico')}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Cardinot Alimentos - {{ $product->nome }}">
+        <meta property="og:title" content="Cardinot Alimentos - Pão de queijo - {{ $product->nome }}">
         <meta property="og:image" itemprop="image" content="{{ asset($fotoSeo->url) }}">
         <meta property="og:image:type" content="image/png">
-        <meta name="description" content=" {{ $product->descricao }}"/>
-        <meta name="keywords" content="Pão, queijo, pão de queijo, pao de queijo, cardinot, paes de queijo, Cardinot Alimentos, alimentos">
+        <meta name="description" content="Pão de queijo - {{ $product->nome }}: {{ $product->descricao }}"/>
+        <meta name="keywords" content="pão de {{ $product->nome }}, pao de queijo de {{ $product->nome }}, Pão, queijo, pão de queijo, pao de queijo, cardinot, paes de queijo, Cardinot Alimentos, alimentos">
         <link rel="canonical" href="https://www.cardinotalimentos.com">
         <meta name="author" content="Jairo Luckas">
         <meta name="robots" content="index">
@@ -21,7 +21,7 @@
 
         <!-- Open Graph Facebook -->
         <meta property="og:title" content="Cardinot Alimentos - {{ $product->nome }}">
-        <meta property="og:description" content="{{ $product->descricao }}"/>
+        <meta property="og:description" content="Pão de queijo - {{ $product->nome }}: {{ $product->descricao }}"/>
         <meta property="og:url" content="https://www.cardinotalimentos.com">
         <meta property="og:site_name" content="Cardinot Alimentos"/>
         <meta property="og:type" content="website">
@@ -30,7 +30,7 @@
 
         <!-- Twitter -->
         <meta name="twitter:title" content="Cardinot Alimentos - {{ $product->nome }}">
-        <meta name="twitter:description" content="{{ $product->descricao }}">
+        <meta name="twitter:description" content="Pão de queijo - {{ $product->nome }}: {{ $product->descricao }}">
         <meta name="twitter:url" content="https://www.cardinotalimentos.com">
         <meta name="twitter:card" content="Temos planos e preços especiais para sua empresa. Entre em contato conosco, será uma honra conhecê-los! CARDINOT ALIMENTOS - A SUA CASA DO PÃO DE QUEIJO!">
         <meta name="twitter:image" content="{{ asset($fotoSeo->url) }}">
