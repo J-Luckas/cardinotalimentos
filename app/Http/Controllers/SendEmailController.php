@@ -30,12 +30,12 @@ class SendEmailController extends Controller
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;                                      // Enable verbose debug output
             $mail->CharSet = 'UTF-8';
             $mail->isSMTP();                                            // Set mailer to use SMTP
-            $mail->Host = "br712.hostgator.com.br";
-            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username = "contato@cardinotalimentos.com";
-            $mail->Password = "21010321Familia.";
-            $mail->SMTPSecure = 'ssl';
-            $mail->Port = 465;
+            $mail->Host = env('MAIL_HOST');  // Specify main and backup SMTP servers
+            $mail->SMTPAuth   = env('MAIL_SMTP_AUTH');                               // Enable SMTP authentication
+            $mail->Username = env('MAIL_USERNAME');                     // SMTP username
+            $mail->Password = env('MAIL_PASSWORD');                               // SMTP password
+            $mail->SMTPSecure = env('MAIL_ENCRYPTION');                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = env('MAIL_PORT');
 
 
             $mail->From = $data['email'];
