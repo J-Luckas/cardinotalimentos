@@ -46,6 +46,8 @@
 
         <script src="{{asset('js/contact.js')}}"></script>
 
+        <!-- SWAL -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
 
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
