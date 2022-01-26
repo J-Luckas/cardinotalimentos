@@ -37,7 +37,7 @@
 
 
 
-                if( currentDate.getTime() <= christmasDate.getTime() && !getCookie("modalChristmas")){
+                if( currentDate <= christmasDate && !getCookie("modalChristmas")){
                     Swal.fire({
                         imageUrl: window.location.origin + '/img/feliz-natal.jpg',
                         showCloseButton: true,
@@ -55,6 +55,39 @@
                     dateExp.setTime(dateExp.getTime() + ( 30 * 60 * 1000));
                     let expires = "expires="+dateExp.toUTCString();
                     document.cookie =  "modalChristmas=true;" + expires + ";path=/";
+                }
+
+            };
+
+            window.onload = (event) => {
+                var currentDate = new Date();
+                var newYearDate = new Date( `January 01, ${currentDate.getFullYear()} 23:59:59` );
+                const getCookie = function (name) {
+                    const value = `; ${document.cookie}`;
+                    const parts = value.split(`; ${name}=`);
+                    if (parts.length === 2) return parts.pop().split(';').shift();
+                }
+
+
+
+                if( currentDate <= newYearDate && !getCookie("modalNewYear")){
+                    Swal.fire({
+                        imageUrl: window.location.origin + '/img/feliz-natal.jpg',
+                        showCloseButton: true,
+                        focusConfirm: false,
+                        showConfirmButton: false,
+                        imageWidth: 400,
+                        imageHeight: 400,
+                        imageAlt: 'Feliz Natal!',
+                        backdrop: `
+                            rgb(176, 28, 34,0.4)
+                        `
+                    });
+
+                    let dateExp = new Date();
+                    dateExp.setTime(dateExp.getTime() + ( 30 * 60 * 1000));
+                    let expires = "expires="+dateExp.toUTCString();
+                    document.cookie =  "modalNewYear=true;" + expires + ";path=/";
                 }
 
             };
