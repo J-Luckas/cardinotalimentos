@@ -31,3 +31,9 @@ footer{
 .redes-sociais{
     background: none;
 }
+
+.swal2-close  {
+    font-size: 1.8em !important;
+    width: 1em !important;
+    height: 1em !important;
+}

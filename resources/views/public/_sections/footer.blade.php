@@ -33,8 +33,6 @@
                     if (parts.length === 2) return parts.pop().split(';').shift();
                 }
 
-
-                // console.log('teste: ', christmasDate);
                 if( currentDate <= christmasDate && !getCookie("modalChristmas")){
                     Swal.fire({
                         imageUrl: window.location.origin + '/img/feliz-natal.png',
