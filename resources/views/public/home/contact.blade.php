@@ -35,7 +35,7 @@
 
                     <div class="div-social-ul soc-4 slideanim">
                         <a href = "mailto: contato@cardinotalimentos.com">
-                            <i class="bi bi-envelope-at social-media-icon px-3"></i>E-mail
+                            <i class="bi bi-envelope social-media-icon px-3"></i>E-mail
                         </a>
                     </div>
                 </li>
