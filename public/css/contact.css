@@ -23,8 +23,13 @@
     text-decoration: none;
 }
 
-.lista-contato > li .soc-3{
+.lista-contato > li .soc-4{
     width: 100%;
+}
+
+.lista-contato > li .soc-3{
+    width: 90%;
+    margin-left: 10%;
 }
 
 .lista-contato > li .soc-2{
